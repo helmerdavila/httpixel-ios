@@ -1,8 +1,27 @@
 import SwiftUI
 
 struct SettingsView: View {
+  @State private var isShowingConfirmation = false
+  
   var body: some View {
-    Text("Hello from settings view")
+    List {
+      Button {
+        isShowingConfirmation = true
+      } label: {
+        Text("Delete all history")
+      }
+      .confirmationDialog(
+        Text("Do you really want to delete all your history?"),
+        isPresented: $isShowingConfirmation
+      ) {
+        Button("Clear history", role: .destructive) {
+          print("Deleting all")
+        }
+        Button("Cancel", role: .cancel) {
+          isShowingConfirmation = false
+        }
+      }
+    }
       .navigationTitle(Text("Settings"))
   }
 }
