@@ -3,21 +3,14 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     TabView {
-      HistoryView()
-      .toolbar {
-        ToolbarItem {
-          Button {
-            print("Hello there")
-          } label: {
-            Image(systemName: "plus")
-          }
-        }
+      NavigationStack {
+        HistoryView()
       }
       .tabItem {
         Label("History", systemImage: "clock")
       }
-      VStack {
-        Text("Hello from settings")
+      NavigationStack {
+        SettingsView()
       }
       .tabItem {
         Label("Settings", systemImage: "hammer")

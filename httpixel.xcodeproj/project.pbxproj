@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF69098829171C43006C0FF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69098729171C43006C0FF3 /* SettingsView.swift */; };
 		CFF35C582916F3E800B0CA70 /* httpixelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C572916F3E800B0CA70 /* httpixelApp.swift */; };
 		CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C592916F3E800B0CA70 /* ContentView.swift */; };
 		CFF35C5C2916F3E900B0CA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF35C5B2916F3E900B0CA70 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF69098729171C43006C0FF3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CFF35C542916F3E800B0CA70 /* httpixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = httpixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF35C572916F3E800B0CA70 /* httpixelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpixelApp.swift; sourceTree = "<group>"; };
 		CFF35C592916F3E800B0CA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				CFF35C8329170BA400B0CA70 /* AddRequestView.swift */,
 				CFF35C862917129900B0CA70 /* HistoryView.swift */,
+				CF69098729171C43006C0FF3 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF69098829171C43006C0FF3 /* SettingsView.swift in Sources */,
 				CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */,
 				CFF35C872917129900B0CA70 /* HistoryView.swift in Sources */,
 				CFF35C8429170BA400B0CA70 /* AddRequestView.swift in Sources */,
