@@ -21,7 +21,8 @@ final class httpixelUITests: XCTestCase {
     app.launch()
     
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    let settingsTab = app.tabs.matching(identifier: "Settings").element
+    let settingsTab = app.tabBars["Tab Bar"].buttons["Settings"]
+    settingsTab.screenshot()
     
     XCTAssertTrue(settingsTab.exists)
     

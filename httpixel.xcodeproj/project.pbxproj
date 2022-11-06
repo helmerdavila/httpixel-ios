@@ -16,7 +16,6 @@
 		CFF35C602916F3E900B0CA70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF35C5F2916F3E900B0CA70 /* Preview Assets.xcassets */; };
 		CFF35C6A2916F3E900B0CA70 /* httpixelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C692916F3E900B0CA70 /* httpixelTests.swift */; };
 		CFF35C742916F3E900B0CA70 /* httpixelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C732916F3E900B0CA70 /* httpixelUITests.swift */; };
-		CFF35C762916F3E900B0CA70 /* httpixelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C752916F3E900B0CA70 /* httpixelUITestsLaunchTests.swift */; };
 		CFF35C8429170BA400B0CA70 /* AddRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C8329170BA400B0CA70 /* AddRequestView.swift */; };
 		CFF35C872917129900B0CA70 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C862917129900B0CA70 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		CFF35C692916F3E900B0CA70 /* httpixelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpixelTests.swift; sourceTree = "<group>"; };
 		CFF35C6F2916F3E900B0CA70 /* httpixelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = httpixelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF35C732916F3E900B0CA70 /* httpixelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpixelUITests.swift; sourceTree = "<group>"; };
-		CFF35C752916F3E900B0CA70 /* httpixelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpixelUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CFF35C8329170BA400B0CA70 /* AddRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRequestView.swift; sourceTree = "<group>"; };
 		CFF35C862917129900B0CA70 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				CFF35C732916F3E900B0CA70 /* httpixelUITests.swift */,
-				CFF35C752916F3E900B0CA70 /* httpixelUITestsLaunchTests.swift */,
 			);
 			path = httpixelUITests;
 			sourceTree = "<group>";
@@ -328,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF35C762916F3E900B0CA70 /* httpixelUITestsLaunchTests.swift in Sources */,
 				CFF35C742916F3E900B0CA70 /* httpixelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +378,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -440,6 +437,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -465,7 +463,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = httpixel/httpixel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 200;
 				DEVELOPMENT_ASSET_PATHS = "\"httpixel/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DA6FPSH99;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -487,11 +485,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taskalia.httpixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = httpixel/httpixel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 200;
 				DEVELOPMENT_ASSET_PATHS = "\"httpixel/Preview Content\"";
 				DEVELOPMENT_TEAM = 5DA6FPSH99;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -527,11 +527,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.4;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taskalia.httpixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,6 +547,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5DA6FPSH99;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
@@ -568,6 +571,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5DA6FPSH99;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
@@ -590,6 +594,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5DA6FPSH99;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
@@ -612,6 +617,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 5DA6FPSH99;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
