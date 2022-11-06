@@ -1,21 +1,20 @@
 import SwiftUI
 
 struct ContentView: View {
+  #if os(iOS)
+  @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+  #endif
+  
   var body: some View {
-    TabView {
-      NavigationStack {
-        HistoryView()
-      }
-      .tabItem {
-        Label("History", systemImage: "clock")
-      }
-      NavigationStack {
-        SettingsView()
-      }
-      .tabItem {
-        Label("Settings", systemImage: "hammer")
-      }
+    #if os(iOS)
+    if horizontalSizeClass == .compact {
+      AppTabNavigation()
+    } else {
+      AppSidebarNavigation()
     }
+    #else
+      AppSidebarNavigation()
+    #endif
   }
 }
 

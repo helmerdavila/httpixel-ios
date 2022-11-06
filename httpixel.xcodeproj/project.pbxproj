@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CF69098829171C43006C0FF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69098729171C43006C0FF3 /* SettingsView.swift */; };
+		CF69098B29172936006C0FF3 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69098A29172936006C0FF3 /* AppSidebarNavigation.swift */; };
+		CF69098E29172997006C0FF3 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69098D29172997006C0FF3 /* AppTabNavigation.swift */; };
 		CFF35C582916F3E800B0CA70 /* httpixelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C572916F3E800B0CA70 /* httpixelApp.swift */; };
 		CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C592916F3E800B0CA70 /* ContentView.swift */; };
 		CFF35C5C2916F3E900B0CA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF35C5B2916F3E900B0CA70 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		CF69098729171C43006C0FF3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CF69098A29172936006C0FF3 /* AppSidebarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigation.swift; sourceTree = "<group>"; };
+		CF69098D29172997006C0FF3 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
 		CFF35C542916F3E800B0CA70 /* httpixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = httpixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF35C572916F3E800B0CA70 /* httpixelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpixelApp.swift; sourceTree = "<group>"; };
 		CFF35C592916F3E800B0CA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF6909892917291A006C0FF3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF69098A29172936006C0FF3 /* AppSidebarNavigation.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		CF69098C29172984006C0FF3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF69098D29172997006C0FF3 /* AppTabNavigation.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		CFF35C4B2916F3E800B0CA70 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +160,8 @@
 		CFF35C8229170B7900B0CA70 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF69098C29172984006C0FF3 /* iOS */,
+				CF6909892917291A006C0FF3 /* macOS */,
 				CFF35C8329170BA400B0CA70 /* AddRequestView.swift */,
 				CFF35C862917129900B0CA70 /* HistoryView.swift */,
 				CF69098729171C43006C0FF3 /* SettingsView.swift */,
@@ -284,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF69098E29172997006C0FF3 /* AppTabNavigation.swift in Sources */,
 				CF69098829171C43006C0FF3 /* SettingsView.swift in Sources */,
 				CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */,
+				CF69098B29172936006C0FF3 /* AppSidebarNavigation.swift in Sources */,
 				CFF35C872917129900B0CA70 /* HistoryView.swift in Sources */,
 				CFF35C8429170BA400B0CA70 /* AddRequestView.swift in Sources */,
 				CFF35C582916F3E800B0CA70 /* httpixelApp.swift in Sources */,
@@ -447,6 +471,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Httpixel;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,10 +483,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taskalia.httpixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +511,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Httpixel;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -495,10 +523,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.taskalia.httpixel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
