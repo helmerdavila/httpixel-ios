@@ -2,17 +2,24 @@ import SwiftUI
 
 struct HistoryView: View {
   var body: some View {
-    Text("Welcome to the history view")
-      .navigationTitle(Text("History"))
-      .toolbar {
-        ToolbarItem {
-          Button {
-            print("Pressed here")
-          } label: {
-            Image(systemName: "plus")
-          }
+    List {
+      VStack {
+        Text("History #1").foregroundColor(Color.red)
+      }
+      VStack {
+        Text("History #2").foregroundColor(Color.green)
+      }
+    }
+    .navigationTitle(Text("History"))
+    .toolbar {
+      ToolbarItem {
+        NavigationLink {
+          AddRequestView()
+        } label: {
+          Image(systemName: "plus")
         }
       }
+    }
   }
 }
 
