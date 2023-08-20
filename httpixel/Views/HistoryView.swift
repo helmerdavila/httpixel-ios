@@ -1,14 +1,11 @@
 import SwiftUI
 
 struct HistoryView: View {
+  let requests: [HTTPRequest]
+  
   var body: some View {
-    List {
-      VStack {
-        Text("History #1").foregroundColor(Color.red)
-      }
-      VStack {
-        Text("History #2").foregroundColor(Color.green)
-      }
+    List(requests) {
+      RequestSmallView(method: $0.method.rawValue, host: $0.host, route: $0.route)
     }
     .navigationTitle(Text("History"))
     .toolbar {
@@ -24,7 +21,15 @@ struct HistoryView: View {
 }
 
 struct HistoryView_Previews: PreviewProvider {
+  static var fakeRequests = {
+    var requests = [HTTPRequestFake]()
+    for _ in 0..<7 {
+      requests.append(HTTPRequestFake())
+    }
+    return requests
+  }()
+  
   static var previews: some View {
-    HistoryView()
+    HistoryView(requests: fakeRequests)
   }
 }

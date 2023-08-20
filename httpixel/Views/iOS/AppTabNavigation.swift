@@ -5,7 +5,7 @@ struct AppTabNavigation: View {
     TabView {
       if #available(iOS 16, macOS 13, *) {
         NavigationStack {
-          HistoryView()
+          HistoryView(requests: [])
         }
         .tabItem {
           Label("History", systemImage: "clock")
@@ -18,7 +18,7 @@ struct AppTabNavigation: View {
         }
       } else {
         NavigationView {
-          HistoryView()
+          HistoryView(requests: [])
         }
         .tabItem {
           Label("History", systemImage: "clock")

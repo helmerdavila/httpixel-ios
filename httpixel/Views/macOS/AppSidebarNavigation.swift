@@ -23,7 +23,7 @@ struct AppSidebarNavigation: View {
         
       } detail: {
         switch selection {
-          case .history: HistoryView()
+          case .history: HistoryView(requests: [])
           case .settings: SettingsView()
           default: Text("Pick an option")
         }
@@ -32,7 +32,7 @@ struct AppSidebarNavigation: View {
       NavigationView {
         List {
           NavigationLink(tag: NavigationItem.history, selection: $selection) {
-            HistoryView()
+            HistoryView(requests: [])
           } label: {
             Label("History", systemImage: "clock")
           }
