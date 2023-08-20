@@ -10,6 +10,17 @@
 		CF69098829171C43006C0FF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69098729171C43006C0FF3 /* SettingsView.swift */; };
 		CF69098B29172936006C0FF3 /* AppSidebarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69098A29172936006C0FF3 /* AppSidebarNavigation.swift */; };
 		CF69098E29172997006C0FF3 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69098D29172997006C0FF3 /* AppTabNavigation.swift */; };
+		CF93FF122A919FD5002A3898 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CF93FF112A919FD5002A3898 /* Alamofire */; };
+		CF93FF182A91A13E002A3898 /* RequestSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF172A91A13E002A3898 /* RequestSmallView.swift */; };
+		CF93FF192A91A13E002A3898 /* RequestSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF172A91A13E002A3898 /* RequestSmallView.swift */; };
+		CF93FF1A2A91A13E002A3898 /* RequestSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF172A91A13E002A3898 /* RequestSmallView.swift */; };
+		CF93FF1D2A91A63F002A3898 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = CF93FF1C2A91A63F002A3898 /* Fakery */; };
+		CF93FF1F2A91AA10002A3898 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF1E2A91AA10002A3898 /* HttpRequest.swift */; };
+		CF93FF202A91AA10002A3898 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF1E2A91AA10002A3898 /* HttpRequest.swift */; };
+		CF93FF212A91AA10002A3898 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF1E2A91AA10002A3898 /* HttpRequest.swift */; };
+		CF93FF232A91AAB3002A3898 /* HttpRequestFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */; };
+		CF93FF242A91AAB3002A3898 /* HttpRequestFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */; };
+		CF93FF252A91AAB3002A3898 /* HttpRequestFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */; };
 		CFF35C582916F3E800B0CA70 /* httpixelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C572916F3E800B0CA70 /* httpixelApp.swift */; };
 		CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C592916F3E800B0CA70 /* ContentView.swift */; };
 		CFF35C5C2916F3E900B0CA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF35C5B2916F3E900B0CA70 /* Assets.xcassets */; };
@@ -41,6 +52,9 @@
 		CF69098729171C43006C0FF3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CF69098A29172936006C0FF3 /* AppSidebarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSidebarNavigation.swift; sourceTree = "<group>"; };
 		CF69098D29172997006C0FF3 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
+		CF93FF172A91A13E002A3898 /* RequestSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSmallView.swift; sourceTree = "<group>"; };
+		CF93FF1E2A91AA10002A3898 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = httpixel/Views/iOS/HttpRequest.swift; sourceTree = SOURCE_ROOT; };
+		CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequestFake.swift; path = httpixel/Views/iOS/HttpRequestFake.swift; sourceTree = SOURCE_ROOT; };
 		CFF35C542916F3E800B0CA70 /* httpixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = httpixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF35C572916F3E800B0CA70 /* httpixelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpixelApp.swift; sourceTree = "<group>"; };
 		CFF35C592916F3E800B0CA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93FF1D2A91A63F002A3898 /* Fakery in Frameworks */,
+				CF93FF122A919FD5002A3898 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CF69098D29172997006C0FF3 /* AppTabNavigation.swift */,
+				CF93FF172A91A13E002A3898 /* RequestSmallView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -169,6 +186,8 @@
 		CFF35C8529170F7200B0CA70 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CF93FF1E2A91AA10002A3898 /* HttpRequest.swift */,
+				CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +208,10 @@
 			dependencies = (
 			);
 			name = httpixel;
+			packageProductDependencies = (
+				CF93FF112A919FD5002A3898 /* Alamofire */,
+				CF93FF1C2A91A63F002A3898 /* Fakery */,
+			);
 			productName = httpixel;
 			productReference = CFF35C542916F3E800B0CA70 /* httpixel.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +284,10 @@
 				Base,
 			);
 			mainGroup = CFF35C4B2916F3E800B0CA70;
+			packageReferences = (
+				CF93FF102A919FD5002A3898 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CF93FF1B2A91A63F002A3898 /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			productRefGroup = CFF35C552916F3E800B0CA70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,12 +330,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93FF232A91AAB3002A3898 /* HttpRequestFake.swift in Sources */,
 				CF69098E29172997006C0FF3 /* AppTabNavigation.swift in Sources */,
 				CF69098829171C43006C0FF3 /* SettingsView.swift in Sources */,
 				CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */,
 				CF69098B29172936006C0FF3 /* AppSidebarNavigation.swift in Sources */,
 				CFF35C872917129900B0CA70 /* HistoryView.swift in Sources */,
+				CF93FF1F2A91AA10002A3898 /* HttpRequest.swift in Sources */,
 				CFF35C8429170BA400B0CA70 /* AddRequestView.swift in Sources */,
+				CF93FF182A91A13E002A3898 /* RequestSmallView.swift in Sources */,
 				CFF35C582916F3E800B0CA70 /* httpixelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93FF242A91AAB3002A3898 /* HttpRequestFake.swift in Sources */,
+				CF93FF192A91A13E002A3898 /* RequestSmallView.swift in Sources */,
 				CFF35C6A2916F3E900B0CA70 /* httpixelTests.swift in Sources */,
+				CF93FF202A91AA10002A3898 /* HttpRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +358,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF93FF252A91AAB3002A3898 /* HttpRequestFake.swift in Sources */,
+				CF93FF1A2A91A13E002A3898 /* RequestSmallView.swift in Sources */,
 				CFF35C742916F3E900B0CA70 /* httpixelUITests.swift in Sources */,
+				CF93FF212A91AA10002A3898 /* HttpRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +710,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF93FF102A919FD5002A3898 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CF93FF1B2A91A63F002A3898 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF93FF112A919FD5002A3898 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF93FF102A919FD5002A3898 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CF93FF1C2A91A63F002A3898 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF93FF1B2A91A63F002A3898 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CFF35C4C2916F3E800B0CA70 /* Project object */;
 }
