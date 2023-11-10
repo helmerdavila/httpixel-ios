@@ -21,6 +21,7 @@
 		CF93FF232A91AAB3002A3898 /* HttpRequestFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */; };
 		CF93FF242A91AAB3002A3898 /* HttpRequestFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */; };
 		CF93FF252A91AAB3002A3898 /* HttpRequestFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */; };
+		CFC89C092AFDEB6D00C42990 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC89C082AFDEB6D00C42990 /* HttpMethod.swift */; };
 		CFF35C582916F3E800B0CA70 /* httpixelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C572916F3E800B0CA70 /* httpixelApp.swift */; };
 		CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF35C592916F3E800B0CA70 /* ContentView.swift */; };
 		CFF35C5C2916F3E900B0CA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF35C5B2916F3E900B0CA70 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		CF93FF172A91A13E002A3898 /* RequestSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSmallView.swift; sourceTree = "<group>"; };
 		CF93FF1E2A91AA10002A3898 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = httpixel/Views/iOS/HttpRequest.swift; sourceTree = SOURCE_ROOT; };
 		CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpRequestFake.swift; path = httpixel/Views/iOS/HttpRequestFake.swift; sourceTree = SOURCE_ROOT; };
+		CFC89C082AFDEB6D00C42990 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HttpMethod.swift; path = httpixel/Views/iOS/HttpMethod.swift; sourceTree = SOURCE_ROOT; };
 		CFF35C542916F3E800B0CA70 /* httpixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = httpixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF35C572916F3E800B0CA70 /* httpixelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpixelApp.swift; sourceTree = "<group>"; };
 		CFF35C592916F3E800B0CA70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				CF93FF1E2A91AA10002A3898 /* HttpRequest.swift */,
 				CF93FF222A91AAB3002A3898 /* HttpRequestFake.swift */,
+				CFC89C082AFDEB6D00C42990 /* HttpMethod.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				CF69098E29172997006C0FF3 /* AppTabNavigation.swift in Sources */,
 				CF69098829171C43006C0FF3 /* SettingsView.swift in Sources */,
 				CFF35C5A2916F3E800B0CA70 /* ContentView.swift in Sources */,
+				CFC89C092AFDEB6D00C42990 /* HttpMethod.swift in Sources */,
 				CF69098B29172936006C0FF3 /* AppSidebarNavigation.swift in Sources */,
 				CFF35C872917129900B0CA70 /* HistoryView.swift in Sources */,
 				CF93FF1F2A91AA10002A3898 /* HttpRequest.swift in Sources */,
@@ -437,6 +441,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -489,6 +494,7 @@
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
